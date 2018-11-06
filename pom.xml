@@ -13,6 +13,23 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
+<repositories>
+    <repository>
+        <!-- Maven 自带的中央仓库使用的Id为central 如果其他的仓库声明也是用该Id
+        就会覆盖中央仓库的配置 --> 
+        <id>central</id>
+        <name>repo1</name>
+        <url>http://repo1.maven.org/maven2</url>
+        <layout>default</layout>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </repository>
+</repositories>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
